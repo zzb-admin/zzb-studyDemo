@@ -1,8 +1,7 @@
 package com.zzb.demo;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class demo1 {
     public static void test1() {
@@ -61,6 +60,12 @@ public class demo1 {
 
     }
 
+    public static void test4(){
+        Calendar instance = Calendar.getInstance();
+        Date time = instance.getTime();
+        System.out.println(time);
+    }
+
     public static void test5(){
 
         int num[] = {2,1,3,4,5,9};
@@ -76,7 +81,32 @@ public class demo1 {
             System.out.print(num[i]+" ");
         }
     }
+
+    /**
+     * 验证码随机生成五位随机数
+     */
+    public static void test6(){
+        String content="ABCDEFGHIJKLMNOPQRSTUVWHYZ";//创建23个大写字母的字符串
+
+        content+=content.toLowerCase();//把大写字母转换成小写字母，相连接
+
+        content+="0123456789";//连接0~9的数字。
+
+        Random random = new Random();//创建一个随机数对象
+
+        StringBuffer stringBuffer = new StringBuffer(5);//创建空间大小为5的StringBuilder对象
+
+        for (int i = 0; i <5; i++) {
+        char n=content.charAt(random.nextInt(content.length()));//截取一个从0到content.length()之间的字符，循环输出5个不同的字符，追加到一起
+            stringBuffer.append(n);
+        }
+        System.out.println(stringBuffer.toString());//转成字符串输出5个字符
+    }
+
+
+
     public static void main(String[] args) {
-        test5();
+
+        test6();
     }
 }
