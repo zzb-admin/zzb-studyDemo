@@ -170,6 +170,25 @@ public class ListStream {
         System.out.println(collect);
     }
 
+    /**
+     *  汇总年龄
+     */
+    public static void test8(){
+        List<Persion> list = new ArrayList<>();
+        list.add(new Persion(1, "liquidweb.com", 80000));
+        list.add(new Persion(2, "linode.com", 90000));
+        list.add(new Persion(3, "digitalocean.com", 120000));
+        list.add(new Persion(4, "aws.amazon.com", 200000));
+        list.add(new Persion(5, "mkyong.com", 1));
+        list.add(new Persion(6, "mkyong.com", 1));
+        list.add(new Persion(7, "mkyong.com", 1));
+        list.add(new Persion(8, "mkyong.com", 1));
+        list.add(new Persion(9, "mkyong.com", 1));
+
+        Integer reduce = list.stream().map(persion -> persion.getAge()).reduce(0, Integer::sum);
+        System.out.println(reduce);
+    }
+
     public static void TestDate1(){
         //now（）获取当前日期时间
         LocalDate localDate = LocalDate.now();
@@ -208,7 +227,7 @@ public class ListStream {
 
 
     public static void main(String[] args) {
-        TestDate2();
+        test8();
     }
 
 

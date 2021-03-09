@@ -1,5 +1,6 @@
 package com.zzb.demo.enumerate;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.google.common.collect.Maps;
 import lombok.AllArgsConstructor;
@@ -26,7 +27,7 @@ public enum FlagDeleteEnum {
             maps.put(flagDeleteEnum.getCode(),flagDeleteEnum);
         }
     }
-
+    @JsonCreator
     public static FlagDeleteEnum of(Integer code){
         if(null == maps.get(code)){
             return FlagDeleteEnum.UN_KNOWN;
