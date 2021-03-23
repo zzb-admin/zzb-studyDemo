@@ -104,9 +104,19 @@ public class demo1 {
     }
 
 
+    /**
+     * 一个小球从100m高处自由落下，每次落地后反弹回原高度的一半再落下，求它在第10次落地时，共经过多少米？第10次反弹多高？
+     */
+    public static void test7(){
+        HashMap<Integer, String> map = new HashMap<>();
+        map.put(1,"2020");
+
+        String s = map.get("1");
+        System.out.println(s);
+    }
 
     public static void main(String[] args) {
 
-        test6();
+        test7();
     }
 }

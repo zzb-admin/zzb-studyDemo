@@ -1,7 +1,6 @@
 package com.zzb.demo;
 
 import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
 import com.zzb.demo.entity.Persion;
 import lombok.extern.slf4j.Slf4j;
 
@@ -14,7 +13,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ListStream {
-
+    private static long ONE_DAY = 24 * 3600000;
     public static void test1(){
         List<String> listA = Arrays.asList("s1", "s2", "s3","s4", "s5", "s6","s7", "s8", "s9");
         List<String> listB = Arrays.asList("t1", "t2", "t3");
@@ -223,11 +222,39 @@ public class ListStream {
         }
     }
 
+    public static String test9(){
+        for(int i=0;i<10;i++){
+            System.out.println(i);
+            if(i==3){
+                return "妈妈想你";
+            }
+        }
+        return null;
+    }
+
+    public static void test10(){
+        List<Integer> list = Lists.newArrayList();
+        Random random = new Random();
+        int randomNum = random.nextInt(3);
+        for(int i=0;i<1000000;i++){
+            list.add(randomNum);
+        }
+        List<Integer> collect = list.stream().filter(l ->
+                l % 100 == 1).collect(Collectors.toList());
+        Set<Integer> collect1 = collect.stream().collect(Collectors.toSet());
+    }
+
+    public static void test11(){
+        Long amount = 10000L;
+        System.out.println(amount%10000);
+        JsonOb
+    }
+
 
 
 
     public static void main(String[] args) {
-        test8();
+        test11();
     }
 
 

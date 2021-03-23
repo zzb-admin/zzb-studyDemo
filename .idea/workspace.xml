@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c580e49-f0ec-4222-b655-7e35bed2c76a" name="Default Changelist" comment="代码调整">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zzb/demo/TestEnumDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zzb/demo/JosnsonTest/TestDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/demo/DateStudy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/demo/DateStudy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/demo/ListStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/demo/ListStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/demo/TestEnumDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/demo/demo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/demo/demo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/demo/entity/Persion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/demo/entity/Persion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/demo/enumerate/FlagDeleteEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/demo/enumerate/FlagDeleteEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/demo/DateStudy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/demo/DateStudy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/demo/ListStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/demo/ListStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/demo/TestEnumDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/demo/demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/demo/demo1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/demo/entity/Persion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/demo/entity/Persion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/demo/enumerate/FlagDeleteEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/demo/enumerate/FlagDeleteEnum.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,13 +43,50 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/ListStream.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/demo1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-52">
-              <caret line="180" column="29" selection-start-line="180" selection-start-column="29" selection-end-line="180" selection-end-column="29" />
+            <state relative-caret-position="439">
+              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;method#test7#0;class#ListStream#0" />
+                <element signature="method#test1#0;class#demo1#0" />
+                <element signature="method#test2#0;class#demo1#0" />
+                <element signature="method#test3#0;class#demo1#0" />
+                <element signature="docComment;method#test6#0;class#demo1#0" />
+                <element signature="method#test6#0;class#demo1#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/entity/Persion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/enumerate/FlagDeleteEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/ListStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="249" column="14" selection-start-line="249" selection-start-column="14" selection-end-line="249" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#test7#0;class#ListStream#0" />
               </folding>
             </state>
@@ -46,66 +94,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/demo1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#test1#0;class#demo1#0" />
-                <element signature="method#test2#0;class#demo1#0" />
-                <element signature="method#test3#0;class#demo1#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+            <state relative-caret-position="523">
+              <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
             </state>
           </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/enumerate/FlagDeleteEnum.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/mailConfig/SslUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+            <state relative-caret-position="1166">
+              <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#266#267#0" expanded="true" />
-                <element signature="e#293#294#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/TestEnumDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.10/lib/src.zip!/java.base/java/util/concurrent/ThreadLocalRandom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="763">
-              <caret line="150" column="12" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
-              <folding>
-                <element signature="e#5617#5618#0" expanded="true" />
-                <element signature="e#5680#5681#0" expanded="true" />
+                <element signature="e#1169#1170#0" expanded="true" />
+                <element signature="e#1212#1213#0" expanded="true" />
+                <element signature="e#1283#1284#0" expanded="true" />
+                <element signature="e#1326#1327#0" expanded="true" />
+                <element signature="e#1397#1398#0" expanded="true" />
+                <element signature="e#1440#1441#0" expanded="true" />
+                <element signature="e#2097#2098#0" expanded="true" />
+                <element signature="e#2148#2149#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,6 +142,8 @@
       <find>Linked</find>
       <find>LinkedHashMap</find>
       <find>ackson-databind</find>
+      <find>goo</find>
+      <find>Lists</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,13 +168,19 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Test10.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/Test10.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/entity/Persion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/TestEnumDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/JosnsonTest/Test1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/JosnsonTest/TestDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/DemoRunAble.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzb/DemoRunAble.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/DateStudy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/ListStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/enumerate/FlagDeleteEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/entity/Persion.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/demo1.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/TestEnumDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/enumerate/FlagDeleteEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/ListStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/mailConfig/X503trustManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzb/demo/mailConfig/SslUtils.java" />
       </list>
     </option>
   </component>
@@ -182,11 +202,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="246" />
-    <option name="y" value="60" />
-    <option name="width" value="1400" />
-    <option name="height" value="785" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="155" />
+    <option name="y" value="65" />
+    <option name="width" value="1590" />
+    <option name="height" value="630" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -194,8 +214,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,16 +247,27 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="study-demo01-List-Stream" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study-demo01-List-Stream" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="mailConfig" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1615274881172" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1616486296310" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -259,7 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestEnumDemo">
+  <component name="RunManager" selected="Application.ListStream">
     <configuration name="DateStudy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zzb.demo.DateStudy" />
       <module name="study-demo01-List-Stream" />
@@ -314,9 +343,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestEnumDemo" />
-        <item itemvalue="Application.demo1" />
         <item itemvalue="Application.ListStream" />
+        <item itemvalue="Application.demo1" />
+        <item itemvalue="Application.TestEnumDemo" />
         <item itemvalue="Application.DateStudy" />
         <item itemvalue="Application.ListStream" />
       </list>
@@ -336,7 +365,13 @@
       <workItem from="1614651575029" duration="15596000" />
       <workItem from="1614760727593" duration="24000" />
       <workItem from="1614851904955" duration="1426000" />
-      <workItem from="1615173355597" duration="6990000" />
+      <workItem from="1615173355597" duration="10238000" />
+      <workItem from="1615291548292" duration="825000" />
+      <workItem from="1615362394830" duration="2235000" />
+      <workItem from="1615882717350" duration="2585000" />
+      <workItem from="1615965575267" duration="707000" />
+      <workItem from="1616227659830" duration="1229000" />
+      <workItem from="1616466864753" duration="3737000" />
     </task>
     <task id="LOCAL-00001" summary="dddd">
       <created>1614588809125</created>
@@ -370,7 +405,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31262000" />
+    <option name="totallyTimeSpent" value="45828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -382,21 +417,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23592493" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17091152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24504249" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24504249" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -408,6 +442,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="MyBatis Log" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -438,6 +473,18 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zzb/demo/demo1.java</url>
+          <line>119</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zzb/demo/ListStream.java</url>
+          <line>225</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -454,13 +501,7 @@
         <state relative-caret-position="-264" />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/19.0/guava-19.0.jar!/com/google/common/collect/Lists.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/19.0/guava-19.0.jar!/com/google/common/collect/Lists.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar!/lombok/extern/slf4j/Slf4j.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -492,56 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/DateStudy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
-          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/entity/Persion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/ListStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52">
-          <caret line="180" column="29" selection-start-line="180" selection-start-column="29" selection-end-line="180" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#test7#0;class#ListStream#0" />
-            <element signature="method#test7#0;class#ListStream#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/demo1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#test1#0;class#demo1#0" />
-            <element signature="method#test2#0;class#demo1#0" />
-            <element signature="method#test3#0;class#demo1#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.10/lib/src.zip!/java.base/java/util/concurrent/ThreadLocalRandom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="763">
@@ -553,13 +544,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.6/jackson-databind-2.8.6.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="1173" column="48" selection-start-line="1173" selection-start-column="48" selection-end-line="1173" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.6/jackson-databind-2.8.6.jar!/com/fasterxml/jackson/databind/ObjectMapper.class" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.10/lib/src.zip!/java.base/java/io/OutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-368">
@@ -567,10 +552,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/TestEnumDemo.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.8.6/jackson-annotations-2.8.6.jar!/com/fasterxml/jackson/annotation/JsonInclude.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/JosnsonTest/TestDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/DemoRunAble.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/TestEnumDemo.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.10/lib/src.zip!/java.base/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="549" column="25" selection-start-line="549" selection-start-column="25" selection-end-line="549" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/DateStudy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -579,14 +581,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/enumerate/FlagDeleteEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        <state relative-caret-position="352">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/entity/Persion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/demo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#test1#0;class#demo1#0" />
+            <element signature="method#test2#0;class#demo1#0" />
+            <element signature="method#test3#0;class#demo1#0" />
+            <element signature="docComment;method#test6#0;class#demo1#0" />
+            <element signature="method#test6#0;class#demo1#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/ListStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="249" column="14" selection-start-line="249" selection-start-column="14" selection-end-line="249" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#test7#0;class#ListStream#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="jrt://C:/Program Files/Java/jdk-11.0.10!/java.base/javax/net/ssl/TrustManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jrt://C:/Program Files/Java/jdk-11.0.10!/java.base/javax/net/ssl/X509TrustManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/demo/mailConfig/SslUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1166">
+          <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+            <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#1397#1398#0" expanded="true" />
+            <element signature="e#1440#1441#0" expanded="true" />
+            <element signature="e#2097#2098#0" expanded="true" />
+            <element signature="e#2148#2149#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -608,7 +679,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -648,7 +719,6 @@
             <option name="proportions">
               <list>
                 <option value="0.36091954" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -656,6 +726,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
