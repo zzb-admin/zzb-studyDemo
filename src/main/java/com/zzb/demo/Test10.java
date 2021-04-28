@@ -310,6 +310,9 @@ public class Test10 {
         private int age;
         private String name;
 
+        public Person() {
+        }
+
         public Person(GenderEnum gender, int age, String name) {
             this.gender = gender;
             this.age = age;
@@ -411,8 +414,4 @@ public class Test10 {
         }
     }
 
-    public static void main(String[] args) {
-        // method5();
-        method6();
-    }
 }

@@ -2,6 +2,7 @@ package com.zzb.demo;
 
 import com.google.common.collect.Lists;
 import com.zzb.demo.entity.Persion;
+import com.zzb.demo.util.StringUtil;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDate;
@@ -160,12 +161,8 @@ public class ListStream {
         list.add(new Persion(5, "mkyong.com", 1));
         list.add(new Persion(1, "mkyong.com", 1));
 
-        Map<Integer, Integer> collect = list.stream()
-                .collect(
-                        Collectors.groupingBy(persion -> persion.getId(), Collectors.summingInt(
-                                Persion::getAge)
-                        )
-                );
+        Map<Integer, List<Persion>> collect = list.stream()
+                .collect(Collectors.groupingBy(Persion::getId));
         System.out.println(collect);
     }
 
@@ -247,14 +244,34 @@ public class ListStream {
     public static void test11(){
         Long amount = 10000L;
         System.out.println(amount%10000);
-        JsonOb
+    }
+
+    public static void test12(){
+        List<Integer> list = Lists.newArrayList();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        List<Integer> listFill = Lists.newArrayList();
+        List<List<Integer>> partition = Lists.partition(list, 2);
+        partition.stream().forEach(lists->{
+        });
+        System.out.println(listFill);
+    }
+
+    public static void test111(){
+        String str = "\"{\"uuid\":\"a53cf239-638e-49d3-8f67-b33408325f57\",\"nickNameId\":11165,\"nickName\":\"给老子成功 消费成功\",\"clientId\":1,\"time\":\"2021-04-15 15:05:14\"}\"";
+        String replace = str.replace("\\", "");
+        int length = replace.length();
+        String substring = replace.substring(1, length - 1);
+        System.out.println(substring);
     }
 
 
-
-
     public static void main(String[] args) {
-        test11();
+        test111();
     }
 
 

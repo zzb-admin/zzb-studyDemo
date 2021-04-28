@@ -1,7 +1,12 @@
 package com.zzb.demo;
 
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+
 import java.util.*;
+import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
 
 public class demo1 {
     public static void test1() {
@@ -115,8 +120,31 @@ public class demo1 {
         System.out.println(s);
     }
 
-    public static void main(String[] args) {
+    public static void mapTest(){
+        Map<Integer, String> concurrentMap = Maps.newConcurrentMap();
+       /* concurrentMap.put(1,"a");
+        concurrentMap.put(2,"b");
+*/
+        Map<Integer, String> hashMap = new Hashtable<>();
+        hashMap.put(1,"a");
+        hashMap.put(2,"b");
+        concurrentMap.putAll(hashMap);
+        System.out.println( concurrentMap.size());
+    }
 
-        test7();
+    public static void testLongMaxNum(){
+        Double pow = Math.pow(2, 63);
+        Long l = new Double(pow).longValue();
+        System.out.println(l );
+    }
+
+    public static void disTest(){
+        List<Integer> integers = Lists.newArrayList(1, 1, 1, 1, 2, 2, 2, 2);
+        List<Integer> collect = integers.stream().distinct().collect(Collectors.toList());
+        System.out.println(collect);
+    }
+
+    public static void main(String[] args) {
+        disTest();
     }
 }
