@@ -14,6 +14,9 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ListStream {
+
+    private static final Integer CPU_SIZE = Runtime.getRuntime().availableProcessors();
+
     private static long ONE_DAY = 24 * 3600000;
     public static void test1(){
         List<String> listA = Arrays.asList("s1", "s2", "s3","s4", "s5", "s6","s7", "s8", "s9");
@@ -65,9 +68,9 @@ public class ListStream {
         return sb.toString();
     }
 
-    /**
+   /* *//**
      * 排序成map
-     */
+     *//*
     public static void test3(){
         List<Persion> list = new ArrayList<>();
         list.add(new Persion(1, "liquidweb.com", 80000));
@@ -84,7 +87,7 @@ public class ListStream {
                                 LinkedHashMap::new                      // returns a LinkedHashMap, keep order
                         ));
         System.out.println(collect);
-    }
+    }*/
 
     public static  void test(){
         Stream<String> stream = Stream.of("I", "love", "you", "too");
@@ -104,7 +107,7 @@ public class ListStream {
 
     /**
      *  重复key问题
-     */
+     *//*
     public static void test4(){
         List<Persion> list = new ArrayList<>();
         list.add(new Persion(1, "liquidweb.com", 80000));
@@ -124,11 +127,11 @@ public class ListStream {
                                 persion -> persion.getAge(), persion -> persion.getUsername(),(oldvalue,newvalue)->newvalue)
                 );
         System.out.println(collect1);
-    }
+    }*/
 
-    /**
+   /* *//**
      * 划分集合true false
-     */
+     *//*
     public static void test5(){
         List<Persion> list = new ArrayList<>();
         list.add(new Persion(1, "liquidweb.com", 80000));
@@ -146,13 +149,13 @@ public class ListStream {
         List<Persion> persion_error = collect.get(false);
         System.out.println(persion_true);
         System.out.println(persion_error);
-    }
+    }*/
 
 
     /**
      * 根据部门汇总数据
      */
-    public static void test6(){
+    /*public static void test6(){
         List<Persion> list = new ArrayList<>();
         list.add(new Persion(1, "liquidweb.com", 80000));
         list.add(new Persion(2, "linode.com", 90000));
@@ -165,11 +168,11 @@ public class ListStream {
                 .collect(Collectors.groupingBy(Persion::getId));
         System.out.println(collect);
     }
-
+*/
     /**
      *  汇总年龄
      */
-    public static void test8(){
+   /* public static void test8(){
         List<Persion> list = new ArrayList<>();
         list.add(new Persion(1, "liquidweb.com", 80000));
         list.add(new Persion(2, "linode.com", 90000));
@@ -183,7 +186,7 @@ public class ListStream {
 
         Integer reduce = list.stream().map(persion -> persion.getAge()).reduce(0, Integer::sum);
         System.out.println(reduce);
-    }
+    }*/
 
     public static void TestDate1(){
         //now（）获取当前日期时间
@@ -269,9 +272,30 @@ public class ListStream {
         System.out.println(substring);
     }
 
+    public static void tsetBulder(){
+        List<Integer> clientIdList = Lists.newLinkedList();
+        Persion build = Persion.builder().idList(clientIdList).username("true").build();
+        System.out.println(build);
+    }
+
+    public static void testInteger(){
+        Integer num1 = 180;
+        Integer num2 = 180;
+        if(180==num1){
+            System.out.println("num1="+num1);
+        }
+        if(180==num2){
+            System.out.println("num2="+num1);
+        }
+    }
+
+    public static void testCpuNum(){
+        System.out.println(CPU_SIZE);
+    }
+
 
     public static void main(String[] args) {
-        test111();
+        testCpuNum();
     }
 
 

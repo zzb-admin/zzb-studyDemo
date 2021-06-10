@@ -58,18 +58,21 @@ public class Test {
 
     //检测乱序问题 如果使用copyOnWriteArrayList可以保证线程安全且不乱序
     public static void coutDownLanchTest(){
+        long currentTimeMillis = System.currentTimeMillis();
         List<Integer> list = Lists.newCopyOnWriteArrayList();
 
-        for(int i=0;i<1000;i++){
+        for(int i=0;i<10000;i++){
             list.add(i);
         }
-        CountDownLatch countDownLatch = new CountDownLatch(1000);
-        ExecutorService threadPool = Executors.newFixedThreadPool(1000);
+        CountDownLatch countDownLatch = new CountDownLatch(50);
+        ExecutorService threadPool = Executors.newFixedThreadPool(50);
         List<List<Integer>> partition = Lists.partition(list, 50);
         partition.stream().forEach(integerList->threadPool.submit(()->{
             System.out.println(integerList);
             countDownLatch.countDown();
         }));
+        long time = currentTimeMillis - System.currentTimeMillis();
+        System.out.println("用时"+time);
         try {
             countDownLatch.await();
             threadPool.shutdown();
@@ -80,7 +83,32 @@ public class Test {
         }
     }
 
+    public static void testMo(){
+        Integer a =10 ;
+        Integer b =4;
+        int num = 10%4;
+        System.out.println(num);
+    }
+
+    public static void testList(){
+        Integer max_num=50;
+        List<Integer> list = Lists.newArrayList();
+        for(int i=0;i<1000;i++){
+            list.add(i);
+        }
+
+        List<List<Integer>> partitionList = Lists.partition(list, max_num);
+
+        for (List<Integer> integers : partitionList) {
+            Integer integer = integers.stream().
+                    max(Integer::compareTo).
+                    orElse(Integer.MAX_VALUE);
+            System.out.println(integer);
+        }
+
+    }
+
     public static void main(String args[]) {
-        coutDownLanchTest();
+        testList();
     }
 }
